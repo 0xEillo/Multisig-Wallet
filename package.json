@@ -1,0 +1,35 @@
+{
+  "name": "multi-sig",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "tokyo",
+  "license": "MIT",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "build": "npm run compile",
+    "test": "npx hardhat test",
+    "coverage": "npx hardhat coverage",
+    "truffle:compile": "truffle compile",
+    "docs": "solidoc2"
+  },
+  "standard": {
+    "env": [
+      "mocha"
+    ],
+    "global": [
+      "ethers",
+      "task",
+      "contract",
+      "artifacts",
+      "web3"
+    ]
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "hardhat": "^2.6.7",
+    "solidity-coverage": "^0.7.17"
+  },
+  "dependencies": {
+    "chai": "^4.3.4"
+  }
+}
